@@ -54,6 +54,7 @@ class ModelPricing:
 MODELS = [
     ModelPricing("gemini-3.8-flash", 0.75, 3.75),
     ModelPricing("gemini-3.1-pro", 2.00, 12.00),
+    ModelPricing("gemini-3.1-flash-lite", 0.25, 1.50)
 ]
 
 
