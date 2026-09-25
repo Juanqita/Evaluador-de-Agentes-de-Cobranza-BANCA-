@@ -1,0 +1,51 @@
+{
+  "conversation": {
+    "id": "C01",
+    "fecha_llamada": "2026-09-22",
+    "datos_cliente": {
+      "nombre": "Andrés Felipe Rojas",
+      "ultimos4_documento": "4821",
+      "producto": "Tarjeta de crédito",
+      "monto_vencido_cop": 1250000,
+      "fecha_vencimiento": "2026-09-15"
+    },
+    "transcripcion": [
+      {
+        "hablante": "agente",
+        "texto": "Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada. ¿Hablo con Andrés Felipe Rojas?"
+      },
+      {
+        "hablante": "cliente",
+        "texto": "Sí, con él."
+      },
+      {
+        "hablante": "agente",
+        "texto": "Gracias, Andrés. Para proteger su información, ¿me confirma los últimos cuatro dígitos de su documento?"
+      },
+      {
+        "hablante": "cliente",
+        "texto": "4821."
+      },
+      {
+        "hablante": "agente",
+        "texto": "Perfecto, gracias. Le llamo porque su tarjeta de crédito presenta un saldo vencido de un millón doscientos cincuenta mil pesos, con fecha de vencimiento el 15 de septiembre. ¿Cuándo podría realizar el pago?"
+      },
+      {
+        "hablante": "cliente",
+        "texto": "Me pagan el viernes, puedo pagar el sábado 26."
+      },
+      {
+        "hablante": "agente",
+        "texto": "Entendido. Queda registrado su compromiso de pago por un millón doscientos cincuenta mil pesos para el sábado 26 de septiembre. ¿Hay algo más en lo que le pueda ayudar?"
+      },
+      {
+        "hablante": "cliente",
+        "texto": "No, gracias."
+      },
+      {
+        "hablante": "agente",
+        "texto": "Gracias por su tiempo, Andrés. Que tenga un buen día."
+      }
+    ]
+  }
+}

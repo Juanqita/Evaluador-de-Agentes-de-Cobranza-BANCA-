@@ -1,0 +1,13 @@
+{
+  "modo_cliente": "real",
+  "n_conversaciones": 20,
+  "ok_count": 19,
+  "fallback_count": 1,
+  "latency_ms": {
+    "min": 5548.75,
+    "p50": 11385.91,
+    "p95": 21470.04,
+    "max": 36465.71,
+    "mean": 13128.29
+  }
+}

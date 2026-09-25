@@ -1,0 +1,1968 @@
+[
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C01",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 208.05,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C01",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C02",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 54.25,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C02",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C03",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 4.69,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C03",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C04",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 20.84,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C04",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C05",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 32.06,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C05",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R6"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C06",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 137.71,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C06",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C07",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 15.79,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C07",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C08",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 141.22,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C08",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C09",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 26.72,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C09",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R10"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C10",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 76.18,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C10",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C11",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 119.13,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C11",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C12",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 257.6,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C12",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C13",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 92.06,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C13",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C14",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 168.04,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C14",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R10"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C15",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 182.17,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C15",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C16",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 138.33,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C16",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C17",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 118.91,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C17",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C18",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 53.91,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C18",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C19",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 230.91,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C19",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "mock",
+    "conversation_id": "C20",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 141.11,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C20",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Criterio R1",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Criterio R2",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "Criterio R3",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Criterio R4",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Criterio R5",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "Criterio R6",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Criterio R7",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Criterio R8",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Criterio R9",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Criterio R10",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Evaluación heurística basada en presencia/ausencia de lenguaje clave en los turnos del agente.",
+          "comentario": "Generado por el evaluador heurístico de referencia (modo mock), no por Gemini."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  }
+]

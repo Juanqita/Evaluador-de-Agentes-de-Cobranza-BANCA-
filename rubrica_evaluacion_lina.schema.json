@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://banco-andino.example/schemas/rubrica_evaluacion_lina.schema.json",
+  "title": "Evaluación de llamada del agente Lina (Banco Andino)",
+  "type": "object",
+  "required": ["id_conversacion", "fecha_llamada", "evaluaciones", "puntaje_total", "veredicto"],
+  "properties": {
+    "id_conversacion": {
+      "type": "string",
+      "description": "Identificador de la conversación evaluada (ej. 'C01')."
+    },
+    "fecha_llamada": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de la llamada, tomada del dataset."
+    },
+    "evaluaciones": {
+      "type": "array",
+      "description": "Una entrada por cada regla R1-R10, en orden.",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["regla", "resultado", "severidad", "evidencia", "comentario"],
+        "properties": {
+          "regla": {
+            "type": "string",
+            "enum": ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10"]
+          },
+          "criterio_evaluado": {
+            "type": "string",
+            "description": "Nombre corto del criterio (ej. 'Presentación e informar grabación')."
+          },
+          "resultado": {
+            "type": "string",
+            "enum": ["cumple", "no_cumple", "no_aplica"]
+          },
+          "severidad": {
+            "type": "string",
+            "enum": ["critica", "alta", "media"],
+            "description": "Severidad fija de la regla (ver rúbrica); se reporta igual aunque el resultado sea no_aplica."
+          },
+          "evidencia": {
+            "type": "string",
+            "description": "Cita o referencia a los turnos de la transcripción que sustentan el resultado (parafraseado, no cita literal extensa)."
+          },
+          "comentario": {
+            "type": "string",
+            "description": "Justificación breve de por qué se marcó cumple/no_cumple/no_aplica."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "puntaje_total": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "100 menos penalizaciones (crítica -40, alta -20, media -10) por cada no_cumple; no_aplica no penaliza."
+    },
+    "veredicto": {
+      "type": "string",
+      "enum": ["aprobado", "aprobado_con_observaciones", "rechazado"]
+    },
+    "banderas_criticas": {
+      "type": "array",
+      "description": "Lista de reglas críticas (R2, R3, R6, R10) que resultaron en no_cumple, si las hay.",
+      "items": {
+        "type": "string",
+        "enum": ["R2", "R3", "R6", "R10"]
+      }
+    }
+  },
+  "additionalProperties": false
+}

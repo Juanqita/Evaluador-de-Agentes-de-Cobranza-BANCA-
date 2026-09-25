@@ -1,0 +1,17 @@
+# render.yaml — Blueprint de Render para el free tier ("Infrastructure as Code").
+# Al conectar el repo en Render y detectar este archivo, Render pre-llena el
+# servicio; solo falta pegar el valor real de GEMINI_API_KEY en el dashboard
+# (sync: false = Render NO lo pide en este archivo ni lo versiona en git).
+
+services:
+  - type: web
+    name: lina-evaluation-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # se configura a mano en el dashboard de Render, nunca en el repo
+      - key: PYTHONUNBUFFERED
+        value: "1"

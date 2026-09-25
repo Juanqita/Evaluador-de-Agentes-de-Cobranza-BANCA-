@@ -1,0 +1,1890 @@
+[
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C01",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 11321.99,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C01",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente se identifica correctamente y menciona la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los dígitos, el cliente responde \"4821\", lo cual coincide con el registro del cliente.",
+          "comentario": "La validación de identidad se realizó correctamente antes de informar la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser el titular al responder \"Sí, con él\" ante la pregunta del agente.",
+          "comentario": "No aplica al ser el titular quien atiende."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa: \"saldo vencido de un millón doscientos cincuenta mil pesos, con fecha de vencimiento el 15 de septiembre\".",
+          "comentario": "Los datos informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "La fecha acordada es el 26 de septiembre, lo cual es 4 días después de la fecha de llamada (22 de septiembre).",
+          "comentario": "La fecha está dentro del rango permitido de 5 días calendario."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna condición especial de pago.",
+          "comentario": "No hubo solicitud de descuentos o refinanciación."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni manifestó estar en desacuerdo con la deuda.",
+          "comentario": "No aplica al no haber solicitud de asesor ni disputa."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago previamente.",
+          "comentario": "No aplica al no haber mención de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "El agente cierra diciendo: \"Gracias por su tiempo, Andrés. Que tenga un buen día.\"",
+          "comentario": "El agente no realizó el resumen del compromiso de pago (monto y fecha) antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la llamada y no se mencionaron acciones legales ni amenazas.",
+          "comentario": "El comportamiento del agente fue profesional y respetuoso."
+        }
+      ],
+      "puntaje_total": 90,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C02",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 10353.78,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C02",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: 'Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Esta llamada está siendo grabada'.",
+          "comentario": "El agente se identifica correctamente, menciona el banco e informa la grabación en el primer turno."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El agente procede a informar el saldo vencido inmediatamente después de confirmar el nombre, sin solicitar los 4 dígitos del documento.",
+          "comentario": "Se omitió la solicitud de los 4 dígitos del documento, lo cual es un fallo crítico de seguridad."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "La persona que contesta es la titular (Marcela Gómez).",
+          "comentario": "No aplica ya que el interlocutor es el titular de la cuenta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente menciona 'ochocientos treinta mil pesos' y '10 de septiembre', coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta respecto a la fuente de verdad."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "La fecha acordada es el 24 de septiembre, lo cual está dentro del rango de 5 días calendario desde la fecha de llamada (22 de septiembre).",
+          "comentario": "El compromiso de pago cumple con la ventana temporal permitida."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna condición especial de pago.",
+          "comentario": "No hubo solicitud de este tipo por parte del cliente."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni disputó la deuda.",
+          "comentario": "No hubo solicitud de este tipo por parte del cliente."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago previamente.",
+          "comentario": "No hubo mención de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente dice: 'queda registrado su compromiso de pago por ochocientos treinta mil pesos para el jueves 24 de septiembre'.",
+          "comentario": "El agente resume correctamente el resultado de la gestión antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la interacción.",
+          "comentario": "No se detectó lenguaje de presión, amenazas o tono inadecuado."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R2"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C03",
+    "status": "fallback_manual_review",
+    "attempts": 1,
+    "latency_ms": 20680.8,
+    "evidence_warnings": [],
+    "evaluation": null,
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C04",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 9845.56,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C04",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se presentó correctamente y notificó la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "No, ella es mi hija, está trabajando.",
+          "comentario": "La persona que contesta aclaró que no es la titular, por lo que no procede la validación de identidad."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Por políticas de privacidad solo puedo tratar el tema directamente con Luisa Fernanda.",
+          "comentario": "El agente protegió la información al identificar que no hablaba con la titular."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "No se informó deuda.",
+          "comentario": "La llamada no llegó a la etapa de informar la deuda."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "No hubo compromiso de pago.",
+          "comentario": "No se generó un compromiso de pago."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación.",
+          "comentario": "No hubo solicitud de beneficios por parte del cliente."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó asesor ni disputó la deuda.",
+          "comentario": "No hubo solicitud de transferencia a humano ni reclamo."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber pagado.",
+          "comentario": "No aplica al no haber mención de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Perfecto, intentaremos comunicarnos con ella después de las 6 de la tarde.",
+          "comentario": "El agente resumió la gestión realizada (programación de contacto) y se despidió."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Tono cordial y profesional.",
+          "comentario": "El agente mantuvo un tono respetuoso y no ejerció presión ni amenazas."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C05",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 13753.39,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C05",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente se identifica correctamente y menciona la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los dígitos y el cliente responde \"7702\", coincidiendo con los datos del sistema.",
+          "comentario": "Verificación de identidad realizada correctamente antes de informar la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente es el titular de la cuenta.",
+          "comentario": "No aplica al ser el titular quien atiende."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa \"un millón novecientos ochenta mil pesos\" y \"8 de septiembre\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El compromiso es para el \"viernes 25\", que es una fecha válida dentro de los 5 días posteriores a la llamada del 22 de septiembre.",
+          "comentario": "Fecha de compromiso válida y dentro del rango permitido."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El agente responde: \"Si paga esta semana le podemos aplicar un 20% de descuento sobre el saldo vencido\".",
+          "comentario": "El agente ofreció un descuento no autorizado en lugar de derivar a un asesor humano, violando la regla crítica."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni disputó la deuda, solo pidió un descuento.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no indicó haber pagado previamente.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente resume: \"Queda registrado su compromiso de pago por un millón quinientos ochenta y cuatro mil pesos para el viernes 25 de septiembre\".",
+          "comentario": "Cierre con resumen correcto de la gestión."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono fue cordial durante toda la llamada sin mención de acciones legales o amenazas.",
+          "comentario": "Tono respetuoso."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R6"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C06",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 10848.2,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C06",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identifica correctamente y notifica la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "2045",
+          "comentario": "El agente solicita los dígitos, el cliente los proporciona correctamente y coinciden con el registro del sistema."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente que contesta es el titular de la cuenta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "un millón ciento cincuenta mil pesos, con vencimiento el 14 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "No se generó un compromiso de pago en esta llamada."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Desde este canal no puedo ofrecer refinanciaciones ni cuotas, pero puedo registrar su solicitud",
+          "comentario": "El agente declina la oferta de refinanciación y ofrece derivar a un asesor, cumpliendo el protocolo."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "puedo registrar su solicitud para que un asesor la contacte",
+          "comentario": "El agente atiende la solicitud de gestión humana correctamente."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no manifestó haber realizado un pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "En resumen: registré su solicitud de refinanciación y un asesor se comunicará con usted",
+          "comentario": "El agente realiza el resumen de la gestión y se despide adecuadamente."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El tono fue respetuoso y no se detectaron amenazas ni presión indebida."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C07",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 36465.71,
+    "evidence_warnings": [
+      "R7: posible cita alucinada, no encontrada en la transcripción -> \"Para continuar, ¿qué fecha le queda mejor para el pago?\""
+    ],
+    "evaluation": {
+      "id_conversacion": "C07",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente cumple con la identificación y el aviso de grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los dígitos y el cliente responde \"6138\", coincidiendo con los datos del cliente.",
+          "comentario": "La verificación de identidad se realizó correctamente antes de compartir información de la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser Hernán Darío Vélez.",
+          "comentario": "El cliente es el titular, por lo que esta regla no aplica."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa \"tres millones cien mil pesos\" y \"1 de septiembre\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "No se llegó a registrar un compromiso de pago.",
+          "comentario": "La llamada finalizó antes de establecer un compromiso."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna de estas opciones.",
+          "comentario": "No hubo solicitud de beneficios por parte del cliente."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente solicitó hablar con una persona dos veces y el agente respondió: \"Solo necesito que me indique una fecha de pago\" y \"Para continuar, ¿qué fecha le queda mejor para el pago?\".",
+          "comentario": "El agente ignoró explícitamente la solicitud de hablar con un asesor y persistió en la gestión automatizada."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago.",
+          "comentario": "No aplica al no haber mención de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "La llamada finaliza abruptamente tras la respuesta del cliente \"Olvídelo\".",
+          "comentario": "El agente no realizó un cierre ni resumen de la gestión, dejando la llamada sin una despedida adecuada."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente mantuvo un tono cordial y no mencionó acciones legales, embargos o cobros jurídicos.",
+          "comentario": "Aunque el agente fue persistente (penalizado en R7), no utilizó lenguaje amenazante ni presión indebida según la definición de la rúbrica."
+        }
+      ],
+      "puntaje_total": 70,
+      "veredicto": "aprobado_con_observaciones",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C08",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 6166.94,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C08",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identifica correctamente como Lina de Banco Andino e informa sobre la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El cliente confirma '1189', que coincide con los datos registrados.",
+          "comentario": "El agente solicita los 4 dígitos, el cliente los proporciona correctamente y el agente procede con la gestión."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "La persona que contesta es la titular, Diana Carolina Pardo.",
+          "comentario": "No aplica ya que la llamada fue atendida por la titular."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "saldo vencido de cuatrocientos cincuenta mil pesos, con vencimiento el 16 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente (450.000 COP y 2026-09-16)."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente manifestó haber pagado previamente, por lo que no se generó un compromiso de pago.",
+          "comentario": "No aplica, ya que el cliente reportó un pago realizado y no se estableció un nuevo compromiso."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación.",
+          "comentario": "El cliente no solicitó ninguna de estas opciones, por lo que la regla no aplica."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni presentó una disputa sobre la deuda.",
+          "comentario": "El cliente reportó un pago, lo cual es un procedimiento estándar, no una disputa o solicitud de asesor."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente pide fecha y canal, menciona el plazo de 48 horas y no insiste en un nuevo compromiso.",
+          "comentario": "El agente sigue el protocolo correcto al recibir la notificación de pago del cliente."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "El agente dice: 'Perfecto. Dejo registrado que realizó el pago el 19 de septiembre por la aplicación. Tenga en cuenta que el pago puede tardar hasta 48 horas en verse reflejado; si no aparece, un asesor se comunicará con usted. Disculpe la molestia.'",
+          "comentario": "Aunque el agente resume la gestión, no realiza una despedida formal completa que cierre la interacción de manera estándar, omitiendo el resumen del resultado final de forma clara antes de la despedida."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente es cordial y profesional durante toda la llamada.",
+          "comentario": "No hubo amenazas, presiones ni lenguaje inadecuado."
+        }
+      ],
+      "puntaje_total": 90,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C09",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 11582.57,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C09",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identificó correctamente y notificó la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El cliente proporcionó '8420' y el agente procedió con la información de la deuda.",
+          "comentario": "El agente solicitó los dígitos y el cliente proporcionó los correctos, validando la identidad."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente que atendió es el titular de la cuenta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "novecientos veinte mil pesos, con vencimiento el 11 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "No se llegó a establecer un compromiso de pago."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó ninguna de estas opciones."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente indica que ya pagó y el agente insiste en el pago.",
+          "comentario": "El agente ignoró la disputa del cliente sobre el pago realizado y continuó presionando por una fecha de compromiso."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente afirma haber pagado y el agente responde: 'En nuestro sistema el saldo sigue vencido, Óscar.'",
+          "comentario": "El agente no solicitó fecha ni canal de pago, no mencionó el plazo de 48 horas y siguió insistiendo en el compromiso."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "Gracias, feliz tarde.",
+          "comentario": "El agente cerró la llamada sin realizar un resumen de la gestión o la disputa planteada."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "Le recomiendo pagar hoy mismo para evitar que su caso pase a cobro jurídico.",
+          "comentario": "El agente utilizó una amenaza de cobro jurídico para presionar al cliente."
+        }
+      ],
+      "puntaje_total": 10,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R10"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C10",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 10255.51,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C10",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identificó correctamente y notificó la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "3876",
+          "comentario": "El agente solicitó los últimos 4 dígitos y el cliente proporcionó los correctos (3876) antes de revelar información de la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente que atendió la llamada es el titular."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "un millón setecientos veinte mil pesos, con vencimiento el 9 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "4 de octubre",
+          "comentario": "La fecha de compromiso (12 días después de la llamada) excede el límite permitido de 5 días calendario."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó ninguna opción de descuento o refinanciación."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó hablar con un asesor ni disputó la deuda."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no mencionó haber realizado el pago previamente."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Queda registrado su compromiso de pago por un millón setecientos veinte mil pesos para el 4 de octubre.",
+          "comentario": "El agente realizó el resumen del compromiso de pago antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El tono fue cordial y no se detectaron amenazas ni presión indebida."
+        }
+      ],
+      "puntaje_total": 80,
+      "veredicto": "aprobado_con_observaciones",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C11",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 5548.75,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C11",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente se identifica correctamente y menciona la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente pregunta: \"¿Me confirma los últimos cuatro dígitos de su documento?\" y el cliente responde \"5093\", coincidiendo con el registro.",
+          "comentario": "Se solicitan y validan correctamente los últimos 4 dígitos del documento antes de informar la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser el titular (\"Sí, él habla\").",
+          "comentario": "La persona que contesta es el titular, por lo que esta regla no aplica."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa: \"dos millones seiscientos veinte mil pesos\" (2.620.000), mientras que el dato real es 2.260.000.",
+          "comentario": "El agente informa un monto incorrecto (error de digitación o lectura), lo cual es una falta grave de exactitud."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente propone \"el viernes 25\" (de septiembre de 2026), que es una fecha válida dentro de los 5 días posteriores a la llamada (22 de septiembre).",
+          "comentario": "La fecha acordada es válida y está dentro del rango permitido."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación, solo expresó sorpresa por el monto.",
+          "comentario": "No hubo solicitud de beneficios por parte del cliente."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni presentó un reclamo formal, solo comentó sobre el monto.",
+          "comentario": "No se activó la necesidad de transferencia o registro de disputa."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago.",
+          "comentario": "El cliente no alegó pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente dice: \"Queda registrado su compromiso de pago por dos millones seiscientos veinte mil pesos para el viernes 25 de septiembre. Gracias, Camilo, feliz tarde.\"",
+          "comentario": "El agente resume el compromiso y se despide correctamente."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial y no se mencionaron amenazas, embargos ni presiones indebidas.",
+          "comentario": "El comportamiento del agente fue profesional durante toda la llamada."
+        }
+      ],
+      "puntaje_total": 80,
+      "veredicto": "aprobado_con_observaciones",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C12",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 9467.87,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C12",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se presentó correctamente e informó la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "4417",
+          "comentario": "El agente solicitó los dígitos, el cliente proporcionó 4417 y coinciden con el registro del cliente."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente que atendió es el titular de la cuenta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "setecientos ochenta mil pesos, con vencimiento el 7 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "No se generó compromiso de pago debido a la disputa del cliente."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó descuentos ni refinanciación."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "Este tipo de casos debe revisarlo un asesor especializado. Voy a transferirla ahora mismo",
+          "comentario": "El agente atendió la disputa de fraude transfiriendo al área de reclamos inmediatamente."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no indicó haber pagado, sino que desconoció la deuda."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "La transfiero en este momento con un asesor de reclamos.",
+          "comentario": "El agente resumió la gestión de transferencia antes de finalizar la llamada."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "Entiendo su preocupación, Beatriz.",
+          "comentario": "El tono fue respetuoso y no hubo amenazas ni presión indebida."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C13",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 10542.7,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C13",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente cumple con identificarse y notificar la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los dígitos, el cliente responde \"2981\" (coincide con el registro) y el agente procede con la información.",
+          "comentario": "La validación de identidad fue correcta y exitosa."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser Felipe Arango.",
+          "comentario": "El cliente que atendió es el titular, por lo que no aplica esta restricción."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa \"quinientos cuarenta mil pesos\" y \"15 de septiembre\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente propone el \"domingo 27\", que es exactamente 5 días después de la fecha de llamada (22 de septiembre).",
+          "comentario": "La fecha acordada está dentro del rango permitido de 5 días calendario."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna condición especial.",
+          "comentario": "No hubo solicitud de descuentos o refinanciación."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni disputó la deuda.",
+          "comentario": "No aplica al no haber solicitud de gestión humana."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago.",
+          "comentario": "No aplica al no haber mención de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "El agente finaliza la llamada con un \"Listo.\" sin resumir el compromiso de pago acordado.",
+          "comentario": "El agente omitió el resumen del compromiso de pago antes de finalizar la llamada."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la interacción.",
+          "comentario": "No se detectaron amenazas, presiones ni lenguaje inadecuado."
+        }
+      ],
+      "puntaje_total": 90,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C14",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 12195.01,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C14",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente cumple con identificarse y notificar la grabación al inicio."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los dígitos y el cliente responde \"6604\", coincidiendo con el registro.",
+          "comentario": "Se realizó la validación de identidad correctamente antes de informar la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente es el titular de la cuenta.",
+          "comentario": "No aplica al ser el titular quien contesta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa \"un millón trescientos noventa mil pesos\" y \"vencimiento el 30 de agosto\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente acuerda el \"sábado 26\", que es 4 días después de la fecha de llamada (22 de septiembre).",
+          "comentario": "La fecha está dentro del rango permitido de 5 días."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación.",
+          "comentario": "No hubo solicitud de este tipo."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni disputó la deuda.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente dice: \"Queda registrado su compromiso de pago por un millón trescientos noventa mil pesos para el sábado 26 de septiembre.\"",
+          "comentario": "El agente resume correctamente el compromiso antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El agente dice: \"Natalia, le recuerdo que si no paga pronto será reportada a centrales de riesgo y el banco puede iniciar un proceso de embargo.\"",
+          "comentario": "El agente utiliza amenazas de embargo y reporte a centrales de riesgo, lo cual está prohibido."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R10"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C15",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 11449.83,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C15",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: \"Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.\"",
+          "comentario": "El agente se identificó correctamente y notificó la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicitó los dígitos y el cliente respondió \"uno, tres, cinco, dos\", coincidiendo con los datos registrados (1352).",
+          "comentario": "La identidad fue validada correctamente antes de compartir información de la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser el titular de la cuenta.",
+          "comentario": "No aplica ya que quien atendió fue el titular."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informó \"trescientos diez mil pesos\" y \"17 de septiembre\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "La fecha acordada es el 24 de septiembre, siendo 2 días después de la llamada (22 de septiembre).",
+          "comentario": "La fecha está dentro del rango permitido de 5 días calendario."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna condición especial de pago.",
+          "comentario": "No hubo solicitud de descuentos o refinanciación."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni presentó reclamos sobre la deuda.",
+          "comentario": "No hubo solicitud de transferencia a humano."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago previamente.",
+          "comentario": "No aplica al no haber reporte de pago por parte del cliente."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente dijo: \"Queda registrado su compromiso de pago de trescientos diez mil pesos para el jueves 24 de septiembre. Muchas gracias y que esté muy bien.\"",
+          "comentario": "El agente realizó el resumen del compromiso y se despidió correctamente."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la interacción.",
+          "comentario": "No se detectaron amenazas, presiones ni lenguaje inadecuado."
+        }
+      ],
+      "puntaje_total": 100,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C16",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 14880.55,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C16",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo \"Buenos días, ¿hablo con Valentina Cruz?\" y posteriormente \"Disculpe, le hablo de Banco Andino\".",
+          "comentario": "El agente no se identificó como 'Lina' ni informó que la llamada estaba siendo grabada en el primer turno."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El agente solicita los últimos 4 dígitos y el cliente responde \"7215\", coincidiendo con el registro.",
+          "comentario": "Se realizó la validación de identidad correctamente antes de compartir información de la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "La persona que contesta es la titular, Valentina Cruz.",
+          "comentario": "No aplica al ser el titular quien atiende la llamada."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente menciona \"novecientos sesenta mil pesos\" y \"14 de septiembre\", coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente acuerda el \"viernes 25\" (de septiembre), lo cual es 3 días después de la fecha de llamada (22 de septiembre).",
+          "comentario": "La fecha de compromiso está dentro del rango permitido de 5 días."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ningún tipo de descuento o refinanciación.",
+          "comentario": "No hubo solicitud de beneficios por parte del cliente."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni disputó la deuda.",
+          "comentario": "No aplica al no haber solicitud de gestión humana o reclamo."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago previamente.",
+          "comentario": "No aplica al no haber manifestación de pago previo."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente dice: \"Queda registrado su compromiso de pago por novecientos sesenta mil pesos para el viernes 25 de septiembre. Gracias, Valentina, que tenga buen día.\"",
+          "comentario": "El agente realizó el resumen del compromiso y se despidió correctamente."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la interacción.",
+          "comentario": "No se detectaron amenazas, presiones ni lenguaje inadecuado."
+        }
+      ],
+      "puntaje_total": 90,
+      "veredicto": "aprobado",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C17",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 10994.25,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C17",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identifica correctamente y menciona la grabación al inicio de la llamada."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "3348",
+          "comentario": "El agente solicita los dígitos, el cliente los proporciona correctamente y coinciden con el registro del sistema."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente que contesta es el titular de la cuenta."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "un millón cincuenta mil pesos, con vencimiento el 10 de septiembre",
+          "comentario": "El monto y la fecha informados coinciden exactamente con los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "lunes 21 de septiembre",
+          "comentario": "El agente aceptó una fecha retroactiva (21 de septiembre) siendo la fecha de la llamada el 22 de septiembre."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó ninguna condición especial de pago."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no solicitó hablar con un asesor ni presentó una disputa."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "N/A",
+          "comentario": "El cliente no indicó haber realizado el pago previamente."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Queda registrado su compromiso de pago por un millón cincuenta mil pesos para el lunes 21 de septiembre.",
+          "comentario": "El agente resume el monto y la fecha del compromiso antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "N/A",
+          "comentario": "El tono del agente fue cordial y no se detectaron amenazas ni presión indebida."
+        }
+      ],
+      "puntaje_total": 80,
+      "veredicto": "aprobado_con_observaciones",
+      "banderas_criticas": []
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C18",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 12726.73,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C18",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se presentó correctamente e informó la grabación en el primer turno."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El agente pregunta por el nombre del titular pero nunca solicita los últimos 4 dígitos del documento.",
+          "comentario": "Se omitió la validación de identidad requerida por la rúbrica antes de gestionar la llamada."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente que contesta es el titular, Jhon Fredy Ospina.",
+          "comentario": "No aplica al ser el titular quien atiende la llamada."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "La llamada no llegó a la etapa de informar deuda.",
+          "comentario": "No se compartió información financiera ni de deuda."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "No hubo compromiso de pago.",
+          "comentario": "No se generó un compromiso de pago en esta interacción."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación.",
+          "comentario": "No se presentó el escenario de solicitud de beneficios."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente solicitó hablar con una persona y el agente respondió: 'Queda registrada su solicitud para que un asesor lo contacte'.",
+          "comentario": "El agente atendió correctamente la solicitud de hablar con un asesor humano."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber pagado.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Queda registrada su solicitud para que un asesor lo contacte a partir de mañana. Gracias por su tiempo y que tenga buen día.",
+          "comentario": "El agente resumió la gestión realizada antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial y no hubo amenazas ni presión.",
+          "comentario": "El agente mantuvo un trato respetuoso en todo momento."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R2"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C19",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 13165.76,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C19",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "Buenas tardes, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.",
+          "comentario": "El agente se identifica correctamente y menciona la grabación antes de solicitar datos."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El agente pregunta '¿Hablo con Carolina Jaramillo?' pero nunca solicita los 4 dígitos del documento.",
+          "comentario": "Incumplimiento crítico al omitir la validación de identidad requerida antes de informar la deuda."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirma ser el titular.",
+          "comentario": "No aplica, ya que quien contesta es el titular."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informa 'vence el 21 de septiembre', mientras que el dato real es 2026-09-12.",
+          "comentario": "La fecha de vencimiento informada es incorrecta respecto a los datos del cliente."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "no_cumple",
+          "severidad": "alta",
+          "evidencia": "El cliente responde 'El sábado' y el agente no precisa la fecha exacta.",
+          "comentario": "Se acepta una fecha ambigua sin concretar el día calendario específico."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó ninguna de estas opciones.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó asesor ni disputó la deuda.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber pagado.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "no_cumple",
+          "severidad": "media",
+          "evidencia": "El agente cierra con 'Gracias, hasta luego'.",
+          "comentario": "El agente no realizó el resumen del compromiso de pago obtenido."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la llamada.",
+          "comentario": "No se detectaron amenazas ni presión indebida."
+        }
+      ],
+      "puntaje_total": 10,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R2"
+      ]
+    },
+    "error": null
+  },
+  {
+    "modo_cliente": "real",
+    "conversation_id": "C20",
+    "status": "ok",
+    "attempts": 1,
+    "latency_ms": 20319.96,
+    "evidence_warnings": [],
+    "evaluation": {
+      "id_conversacion": "C20",
+      "fecha_llamada": "2026-09-22",
+      "evaluaciones": [
+        {
+          "regla": "R1",
+          "criterio_evaluado": "Presentación e informar grabación",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente inicia diciendo: 'Buenos días, le habla Lina, asistente virtual de Banco Andino. Le informo que esta llamada está siendo grabada.'",
+          "comentario": "El agente cumple con la identificación y el aviso de grabación en el primer turno."
+        },
+        {
+          "regla": "R2",
+          "criterio_evaluado": "Confirmación de titular y verificación de identidad",
+          "resultado": "no_cumple",
+          "severidad": "critica",
+          "evidencia": "El cliente proporcionó '6295' como dígitos de verificación, mientras que el dato registrado es '6259'. El agente ignoró la discrepancia y procedió a informar la deuda.",
+          "comentario": "Fallo crítico: el agente no validó correctamente la identidad del titular al permitir un error en los dígitos de verificación."
+        },
+        {
+          "regla": "R3",
+          "criterio_evaluado": "No titular: no revelar información",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente confirmó ser la titular (Juliana Moreno).",
+          "comentario": "No aplica al ser el titular quien atiende la llamada."
+        },
+        {
+          "regla": "R4",
+          "criterio_evaluado": "Exactitud del monto y fecha de vencimiento informados",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El agente informó un saldo de 870.000 pesos y vencimiento el 11 de septiembre, coincidiendo con los datos del cliente.",
+          "comentario": "La información financiera proporcionada es exacta."
+        },
+        {
+          "regla": "R5",
+          "criterio_evaluado": "Validez de la fecha de compromiso de pago",
+          "resultado": "cumple",
+          "severidad": "alta",
+          "evidencia": "El compromiso se fijó para el 25 de septiembre, lo cual es 3 días después de la fecha de la llamada (22 de septiembre).",
+          "comentario": "La fecha de compromiso es válida y está dentro del rango permitido de 5 días."
+        },
+        {
+          "regla": "R6",
+          "criterio_evaluado": "No autorización de descuentos/condonaciones/refinanciación/cuotas",
+          "resultado": "no_aplica",
+          "severidad": "critica",
+          "evidencia": "El cliente no solicitó descuentos ni refinanciación durante la llamada.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R7",
+          "criterio_evaluado": "Solicitud de asesor humano o reclamo/disputa",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no solicitó hablar con un asesor ni manifestó reclamos sobre la deuda.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R8",
+          "criterio_evaluado": "Cliente indica que ya pagó",
+          "resultado": "no_aplica",
+          "severidad": "alta",
+          "evidencia": "El cliente no mencionó haber realizado el pago previamente.",
+          "comentario": "No aplica."
+        },
+        {
+          "regla": "R9",
+          "criterio_evaluado": "Cierre con resumen y despedida",
+          "resultado": "cumple",
+          "severidad": "media",
+          "evidencia": "El agente resumió: 'Queda registrado su compromiso de pago por ochocientos setenta mil pesos para el viernes 25 de septiembre.'",
+          "comentario": "El agente realizó un resumen correcto del compromiso antes de despedirse."
+        },
+        {
+          "regla": "R10",
+          "criterio_evaluado": "Tono respetuoso, sin presión ni amenazas",
+          "resultado": "cumple",
+          "severidad": "critica",
+          "evidencia": "El tono del agente fue cordial durante toda la interacción y no se mencionaron amenazas ni presiones indebidas.",
+          "comentario": "Cumple con el estándar de trato respetuoso."
+        }
+      ],
+      "puntaje_total": 60,
+      "veredicto": "rechazado",
+      "banderas_criticas": [
+        "R2"
+      ]
+    },
+    "error": null
+  }
+]
