@@ -92,6 +92,15 @@ uvicorn main:app --reload --port 8080
 - `POST /evaluate` con `{"conversation": {...}}` → evalúa una llamada
 - `POST /evaluate/batch` con `{"conversations": [...], "max_concurrency": 5}` → hasta 50 llamadas por request
 
+**Nota sobre streaming**: el pipeline no usa streaming de la respuesta del
+LLM ni de la API. Es una decisión deliberada, no una omisión: el caso de
+uso es evaluación por lotes (el cliente necesita el JSON completo y
+validado de una conversación, no tokens parciales que no sirven hasta que
+el objeto esté completo y haya pasado la validación de schema/citas). Sí
+se maneja streaming a nivel de *entrada* — el body de `/evaluate/batch` se
+lee en streaming para poder cortar con `MaxBodySizeMiddleware` antes de
+cargarlo completo en memoria.
+
 ```bash
 curl.exe -X POST http://localhost:8080/evaluate -H "Content-Type: application/json" --data-binary "@conversacion_ejemplo.json"
 ```
@@ -171,6 +180,11 @@ Railway lo eliminó en 2023. Trade-off aceptado: cold start de 30-50s tras
 4. Primer build (~2-3 min) → URL pública. De ahí en adelante, cada
    `git push` auto-despliega.
 
+**Nota sobre cold start**: tras ~15 min de inactividad el servicio se
+duerme; el primer request tras eso puede tardar 30-50s en responder antes
+de empezar a evaluar. No es una falla ni una respuesta colgada — un
+`GET /health` de calentamiento antes de la evaluación real lo resuelve.
+
 ## Metodología de evaluación (LLM-as-a-judge)
 
 Usar un LLM para evaluar el cumplimiento de otro sistema (aquí, un agente
@@ -210,12 +224,21 @@ veredicto agregado:
 
 ## Costos
 
-Ver `cost_estimation.py`. Estimado para 1.000 conversaciones con
-`gemini-3.8-flash` (precio introductorio hasta 31/12/2026): **≈ $5.71**
-($0.0057/conversación). Nota: por disponibilidad/demanda variable de los
-modelos más nuevos (ver limitaciones), el pipeline terminó corriendo en
-producción con `gemini-3.1-flash-lite`, más barato — recalcular con
-`cost_estimation.py` si se fija el modelo definitivo antes de escalar.
+Ver `cost_estimation.py` (1.120 llamadas totales para 1.000 conversaciones,
+incluyendo reintentos; 2.576.000 tokens de entrada, 1.008.000 de salida).
+
+| Modelo | Costo total /1.000 conv. | Costo /conversación | Estado |
+|---|---|---|---|
+| **`gemini-3.1-flash-lite`** | **$2.16** | **$0.0022** | **usado en producción** (modelo real de `results.json`; tarifa oficial $0.25/$1.50 por millón de tokens, sept. 2026) |
+| `gemini-3.8-flash` | $5.71 | $0.0057 | evaluado; retirado/inestable durante la prueba (ver Limitaciones) |
+| `gemini-3.1-pro` | $17.25 | $0.0172 | evaluado y descartado — ~8x más costoso que el modelo de producción, sin ganancia de calidad justificable para este caso de uso |
+
+El costo real de este pipeline en producción es **≈ $2.16 por cada 1.000
+conversaciones** ($0.0022/conversación) con `gemini-3.1-flash-lite`. Nota
+de corrección: una versión anterior de `cost_estimation.py` tenía la
+tarifa de `flash-lite` copiada por error de `gemini-3.8-flash` ($0.75/$3.75
+en vez de su precio real, $0.25/$1.50/millón de tokens) — corregido antes
+de esta entrega.
 
 ## Limitaciones conocidas y notas metodológicas
 
