@@ -27,7 +27,7 @@ DEFAULT_BURST = 10
 # propio, más estricto, medido en conversaciones-por-minuto en vez de
 # requests-por-minuto.
 BATCH_RATE_PER_SECOND = 0.2   # ~12 conversaciones/min "equivalentes"
-BATCH_BURST = 5
+BATCH_BURST = 50
 
 
 @dataclass
